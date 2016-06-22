@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1">
+    <title>My Game - <%=@game.name %></title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <style>
+    </style>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+    </script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="col-sm-12">
+        <h1><%= @game.name %></h1>
+        
+        <table>
+            <tr>
+            <td>Game Name</td><td><%= @game.name %></td>
+            </tr>
+            <tr>
+            <td>Publisher Name</td><td><%= @game.publisher %></td>
+            </tr>
+            <tr>
+            <td>Published Date</td><td><%= @game.published_date %></td>
+            </tr>
+            <tr>
+            <td>Console</td><td><%= @game.game_console %></td>
+            </tr>
+            
+        </table>
+        <a href="/games">Back to Index</a>
+        </div>
+    </div>
+</body>
+</html>

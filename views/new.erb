@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1">
+    <title>Add New Game</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <style>
+    </style>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+    </script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="col-sm-12">
+        <form method="post" action="/games/create" >
+        <label for="gamename">Game Name:</label>
+            <input type="text" id="gamename"  >
+            <label for="publisher" >Publisher:</label>
+             <input type="text" id="publisher" >
+            <label for="published_date">Published Date:</label>
+            <input type="text" id="published_date">
+            <label for="game_console">Game Console:</label>
+            <input type="text" id="game_console">
+        </form>
+    </div>
+</div>
+</body>
+</html>
